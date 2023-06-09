@@ -21,6 +21,7 @@ public class Etsy {
        etsyHomePage.searchInput.sendKeys(testData + Keys.ENTER);
         String title = Driver.getDriver().getTitle();
         Assert.assertFalse("Title failed",title.contains(testData));
+        Driver.quit();
 
     }
 }
